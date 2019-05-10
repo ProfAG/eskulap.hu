@@ -1,8 +1,4 @@
-/* =============================
-
-    GENERAL STYLES
-
-=============================*/
+/* eskulap.hu */
 
 * {
   box-sizing: border-box;
@@ -57,18 +53,18 @@ a:hover {
   color: #eda087;
   transition: color .15s ease-in-out;
 }
-/* =============================
+/* ====:)=====
 
     HEADER STYLES
 
-=============================*/
+=======:)====*/
 
 .cover {
   background: url('assets/cover.jpg') no-repeat 70% center/cover;
   display: table;
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -76,6 +72,7 @@ a:hover {
   .cover {
     background: url('assets/cover.jpg') no-repeat center/cover;
   }
+}
 
 .hero-text-wrapper {
   display: table-cell;
@@ -85,14 +82,14 @@ a:hover {
 .hero-text {
   margin: 0 auto;
   padding: .625rem;
-  color: hsla(0,0%,100%,.9);
+  color: hsla(0,0%,100%,.8);
   background: hsla(100,0%,0%,.5);
 }
 
 .hero-text h1 {
   font-size: 3.15rem;
   color: #d2ba87;
-  margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+  margin-bottom: 0;
 }
 
   @media (min-width: 768px) {
@@ -114,6 +111,14 @@ a:hover {
   letter-spacing: .15rem;
 }
 
+@media (min-width: 768px) {
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
 .tagline::after {
   display: block;
   content: "";
@@ -122,12 +127,6 @@ a:hover {
   width: 12.515625rem;
   margin: .5rem auto;
 }
-  @media (min-width: 768px) {
-
-  .tagline {
-    text-transform: uppercase;
-  }
-  }
 
 .date {
   font-size: 1.25rem;
@@ -145,6 +144,7 @@ a:hover {
   vertical-align: middle;
   margin: 0 .5rem;
 }
+
 .blurb img {
   height: 7.5rem;
 }
@@ -172,7 +172,7 @@ a:hover {
     display: inline-block;
     width: 30%;
     padding: 1.5rem;
-    margin: .5rem;
+    margin: .1rem;
   }
 
   .blurb::after {
@@ -180,9 +180,10 @@ a:hover {
   }
 
 }
+
 .program {
-  width: 100vw;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   background: hsla(100,0%,0%,.6);
   color: #d2ba87;
   font-family: 'Muli', sans-serif;
@@ -190,16 +191,18 @@ a:hover {
 
 .program h2 {
   font-family: 'Great Vibes', cursive;
-  margin-top: 1rem; /* To account for the unequal margins compared to the previous section. */
+  margin: 0.3rem;
   text-align: center;
 }
 
 .program p {
   font-style: italic;
+  margin: 0.4rem;
 }
 
 .program ul {
   letter-spacing: .025rem;
+   margin: 0.7rem;
 }
   
   @media (min-width: 768px) {
@@ -210,6 +213,7 @@ a:hover {
   }
 
 }
+
 .gifts img {
   height: 7.5rem;
 }
@@ -220,12 +224,12 @@ a:hover {
 .faq {
   background: hsla(100,0%,0%,.6);;
   color: #d2ba87;
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 
 .faq h2 {
-  margin-top: 1rem;
+  margin: 0.1rem;
 }
 
 .faq p {
@@ -242,11 +246,7 @@ a:hover {
   background-color: #d2ba87;
 }
 
-.question {
-  font-weight: 700;
-  margin-bottom: .5rem;
-}
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
 
   .question-group {
     display: inline-block;
@@ -266,24 +266,31 @@ a:hover {
 
 }
 
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
 .answer {
   margin-bottom: 1.5rem;
 }
+
+
 footer {
-  height: 10vh;
-  width: 100vw;
+  height: 5vh;
+  width: 100%;
   background-color: #606060;
   color: #fff;
   font-family: 'Muli', sans-serif;
   display: table;
   text-align: center;
-  font-size: .875rem;
+  font-size: .575rem;
 }
 
 .footer-wrapper {
   display: table-cell;
   vertical-align: middle;
-  padding: .5rem 1rem;
+  padding: 0.3rem 0.6rem;
 }
 
 footer p {
@@ -296,7 +303,7 @@ footer small {
   @media (min-width: 768px) {
 
   footer {
-    min-height: 7vh;
+    min-height: 5vh;
   }
 
 }
